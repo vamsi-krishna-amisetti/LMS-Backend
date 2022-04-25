@@ -49,6 +49,8 @@ namespace LibraryManagementApp
             services.AddTransient<IDesignation, DesignationRepository>();
             services.AddTransient<IEBook, EbookRepository>();
             services.AddTransient<IFaculty, FacultyRepository>();
+            services.AddTransient<IStudent, StudentRepository>();
+            services.AddTransient<IIssue, IssueRepository>();
         }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
